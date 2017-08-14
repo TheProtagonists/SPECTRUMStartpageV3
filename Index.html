@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<!-- 
+	Multipurpose aesthetically appealing and partially forked adaptive startpage that displays a lot of useless information
+-->
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" sizes="128x128" href="images/Logo.png" />
+	<link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<title>&lrm;</title>
+
+</head>
+
+<body>
+
+	<div class="BG"></div>
+	
+	<div class="Main-container">
+		
+		<div class="Time-container">
+			<p class="TimeHMS" id="Time"></p>
+			<p class="TimeWeek" id="Week"></p>
+			<p class="TimeDate" id="Date"></p>
+		</div>
+		
+		<div class="Search-container">
+			<input type="text" autocomplete="off" class="SearchBar" id="Search" spellcheck="false" onfocus="blurBG()" oninput="blurBG()" onblur="unblurBG()" />
+			<span class="Bar"></span>
+		</div>
+		
+		<div class="Link-container">
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/a.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.youtube.com/" class="Link">YouTube</a>
+					<a href="https://en.wikipedia.org/wiki/Main_Page" class="Link">Wikipedia</a>
+					<a href="https://twitter.com/" class="Link">Twitter</a>
+					<a href="https://inbox.google.com/" class="Link">Inbox</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/b.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://play.google.com/music" class="Link">Play Music</a>
+					<a href="https://soundcloud.com/you/collection" class="Link">SoundCloud</a>
+					<a href="https://www.youtube.com/playlist?list=PLQROaTQABfcPFa5alQM0KuBi0SrqS_-pV" class="Link">YT Playlist</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/c.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.reddit.com/" class="Link">Frontpage</a>
+					<a href="https://www.reddit.com/me/m/aestheics" class="Link">m/Aestheics</a>
+					<a href="https://www.reddit.com/me/m/dedicated_game_weeb/" class="Link">m/Dedicated</a>
+					<a href="https://www.reddit.com/me/m/memetics" class="Link">m/Memes</a>
+					<a href="https://www.reddit.com/user/TheProtagonists/saved/" class="Link">Saved</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/d.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="http://www.deviantart.com/browse/all/" class="Link">deviantART</a>
+					<a href="http://www.pixiv.net/" class="Link">pixiv</a>
+					<a href="http://www.pixivision.net/" class="Link">pixivision</a>
+					<a href="http://tvtropes.org/" class="Link">TV Tropes</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/e.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://wall.alphacoders.com/" class="Link">WP Abyss</a>
+					<a href="https://alpha.wallhaven.cc/search?categories=110&purity=100&sorting=date_added&order=desc" class="Link">Wallheaven</a>
+					<a href="http://safebooru.org/index.php?page=post&s=list" class="Link">Safebooru</a>
+					<a href="http://konachan.net/post" class="Link">Konachan</a>
+					<a href="https://yande.re/" class="Link">Yande.re</a>
+					<a href="http://waifu2x.booru.pics/" class="Link">waifu2x</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/f.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="http://store.steampowered.com/" class="Link">Steam</a>
+					<a href="http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/" class="Link">KanColle</a>
+					<a href="http://game.granbluefantasy.jp/" class="Link">Granblue</a>
+					<a href="https://myanimelist.net/animelist/TheProtagonists" class="Link">Anime List</a>
+					<a href="http://kissanime.ru/BookmarkList" class="Link">Kissanime</a>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+	<script src="Script/jquery.simpleWeather.min.js"></script>
+	<script src="Script/main.js"></script>
+	<script src="Script/search.js"></script>
+	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+	
+</body>
