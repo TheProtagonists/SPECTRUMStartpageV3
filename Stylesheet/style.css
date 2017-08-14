@@ -3,11 +3,11 @@
 /*Weather font*/
 @font-face {
 	font-family: Artill;
-	src:url('../fonts/artill_clean_icons-webfont.eot');
-	src:url('../fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'), 
-		url('../fonts/artill_clean_icons-webfont.woff') format('woff'), 
-		url('../fonts/artill_clean_icons-webfont.ttf') format('truetype'), 
-		url('../fonts/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+	src:url('../Fonts/artill_clean_icons-webfont.eot');
+	src:url('../Fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'), 
+		url('../Fonts/artill_clean_icons-webfont.woff') format('woff'), 
+		url('../Fonts/artill_clean_icons-webfont.ttf') format('truetype'), 
+		url('../Fonts/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
 	font-weight:normal;
 	font-style:normal;
 }
@@ -16,37 +16,32 @@
 
 @font-face {
 	font-family: OlmpicBranding;
-	src: url(../fonts/Olympic_Branding.ttf);
+	src: url(../Fonts/Olympic_Branding.ttf);
 }
 
 @font-face {
 	font-family: NexaLight;
-	src: url(../fonts/Nexa_Light.ttf);
+	src: url(../Fonts/Nexa_Light.ttf);
 }
 
 @font-face {
 	font-family: NexaBold;
-	src: url(../fonts/Nexa_Bold.ttf);
+	src: url(../Fonts/Nexa_Bold.ttf);
 }
 
 @font-face {
 	font-family: Baksheesh;
-	src: url(../fonts/Baksheesh.ttf);
+	src: url(../Fonts/Baksheesh.ttf);
 }
 
 @font-face {
 	font-family: BaksheeshThin;
-	src: url(../fonts/Baksheesh-Thin.ttf);
+	src: url(../Fonts/Baksheesh-Thin.ttf);
 }
 
 @font-face {
 	font-family: BaksheeshBold;
-	src: url(../fonts/Baksheesh-Bold.ttf);
-}
-
-@font-face {
-	font-family: Gidole;
-	src: url(../fonts/Gidole.ttf);
+	src: url(../Fonts/Baksheesh-Bold.ttf);
 }
 
 /* --------Structure Element Styles-------- */
