@@ -173,7 +173,7 @@ $(document).ready(
 	function() {
 		randomBG();
 		updateTime();
-		getWeather();
-		getIP(json);
+		// getWeather();
+		// getIP(json);
 	}
 );
