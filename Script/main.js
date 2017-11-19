@@ -129,7 +129,19 @@ function randomBG(){
 				'Images/77.jpg',
 				'Images/78.jpg',
 				'Images/79.jpg',
-				'Images/80.jpg'];
+				'Images/80.jpg',
+				'Images/81.png',
+				'Images/82.png',
+				'Images/83.jpg',
+				'Images/84.jpg',
+				'Images/85.png',
+				'Images/86.jpg',
+				'Images/87.jpg',
+				'Images/88.jpg',
+				'Images/89.jpg',
+				'Images/90.jpg',
+				'Images/91.jpg',
+				'Images/92.png'];
 	
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
@@ -169,6 +181,7 @@ function unblurBG() {
 }
 
 //Initialize everything
+//Weather and IP are turned off since they aren't used anyway
 $(document).ready(
 	function() {
 		randomBG();
