@@ -30,6 +30,11 @@
 			<p class="TimeDate" id="Date"></p>
 		</div>
 		
+		<div class="Countdown-container">
+			<p class="CountdownTitle">Time left for you to actually do things</p>
+			<div id="countbox"></div>
+		</div>
+		
 		<div class="Search-container">
 			<input type="text" autocomplete="off" class="SearchBar" id="Search" spellcheck="false" onfocus="blurBG()" oninput="blurBG()" onblur="unblurBG()" />
 			<span class="Bar"></span>
@@ -106,6 +111,7 @@
 	<script src="Script/jquery.simpleWeather.min.js"></script>
 	<script src="Script/main.js"></script>
 	<script src="Script/search.js"></script>
+	<script src="Script/countdown.js"></script>
 	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 	
 </body>

@@ -121,6 +121,13 @@
 	height: 100%;
 }
 
+.Countdown-container {
+	height: 10%;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 /* --------Content Element Styles-------- */
 
 .TimeHMS {
@@ -228,4 +235,18 @@
 .Link:hover:after {
 	opacity: 1;
 	right: -2%;
+}
+
+.CountdownTitle {
+	margin: 0 auto;
+	font-size: 2.5vh;
+	font-family: Baksheesh;
+	color: rgba(255, 255, 255, 1);
+}
+
+#countbox {
+	margin: 0 auto;
+	font-size: 2.5vh;
+	font-family: BaksheeshBold;
+	color: rgba(255, 255, 255, 1);
 }
