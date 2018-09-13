@@ -155,24 +155,8 @@ function randomBG(){
 	
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
-	//Only way to get rid of white borders DO NOT middle click in Firefox or it ruins everything
+	//Only way to get rid of white borders
 	$('.BG').css("transform", "scale(1.05)");
-}
-
-//Weather, directly copied from simpleWeather.js but with location disabled because firefox asks for permission every time
-function getWeather(location, unit) {
-	$.simpleWeather({
-		location: 'Sunrise, FL',
-		unit: 'c',
-		success: function(weather) {
-			$('.Weather-Location').html(weather.city + ', ' + weather.region);
-			$('.Weather-TempC').html(weather.temp + weather.units.temp + '&deg;');
-			$('.Weather-TempR').html(weather.low + weather.units.temp + '&deg;' + ' ~ ' + weather.high + weather.units.temp + '&deg;');
-			$('.Weather-Condition').html(weather.currently);
-			$('.Weather-Icon').html('<span class="icon-' + weather.code + '"></span>');
-		},
-		error: function(error) { $('.Weather-Location').html(error); }
-	});
 }
 
 //Get public IP address
@@ -195,7 +179,7 @@ $(document).ready(
 	function() {
 		randomBG();
 		updateTime();
-		// getWeather();
-		// getIP(json);
+		CountDown1();
+		CountDown2();
 	}
 );

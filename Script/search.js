@@ -26,7 +26,7 @@ function search(query){
 
 		case "-tv":
 			query = query.substr(4);
-			window.location = "http://tvtropes.org/pmwiki/search_result.php?q=" + query;
+			window.location = "https://tvtropes.org/pmwiki/elastic_search_result.php?q=" + query;
 			break;
 
 		case "-r/":
