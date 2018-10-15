@@ -1,6 +1,6 @@
 function CountDown1(){
 
-        dateFuture = new Date(2018,9,15,0,0,0);
+        dateFuture = new Date(2018,9,25,0,0,0);
 		dateNow = new Date();
         amount = dateFuture.getTime() - dateNow.getTime();
         delete dateNow;
