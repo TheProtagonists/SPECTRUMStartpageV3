@@ -4,6 +4,7 @@ Startpage for personal use
 
 
 Live: https://theprotagonists.github.io/SPECTRUMStartpageV3/
+(The fonts might not show correctly)
 
 # Search function prefixes
 Can be found and changed on search.js
