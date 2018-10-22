@@ -1,5 +1,5 @@
 # SPECTRUMStartpageV3
-WIP personal startpage with a heavy emphasis on aesthetics
+Startpage for personal use
 
 
 

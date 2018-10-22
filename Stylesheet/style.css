@@ -45,8 +45,8 @@
 }
 
 @font-face {
-	font-family: Gidole;
-	src: url(../fonts/Gidole.ttf);
+	font-family: Borda;
+	src: url(../fonts/Borda-Medium.ttf);
 }
 
 /* --------Structure Element Styles-------- */
@@ -127,18 +127,34 @@
 }
 
 .Countdown-container {
-	height: 10%;
-	width: 100%;
+	height: 5%;
+	width: 50%;
 	margin: 0 auto;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 /* --------Content Element Styles-------- */
 
+#countbox1 {
+	margin: 0 auto;
+	font-size: 2.5vh;
+	font-family: Borda;
+	color: rgba(255, 255, 255, 1);
+}
+
+#countbox2 {
+	margin: 0 auto;
+	font-size: 2.5vh;
+	font-family: Borda;
+	color: rgba(255, 255, 255, 1);
+}
+
 .TimeHMS {
 	margin: 2vh auto -7vh auto;
 	font-size: 5vh;
-	font-family: Baksheesh;
+	font-family: Borda;
 	color: rgba(255, 255, 255, 1);
 }
 
@@ -152,7 +168,7 @@
 .TimeDate {
 	margin: -6vh auto 2vh auto;
 	font-size: 4vh;
-	font-family: Baksheesh;
+	font-family: Borda;
 	color: rgba(255, 255, 255, 1);
 }
 
@@ -205,8 +221,8 @@
 }
 
 .Link {
-	font-family: NexaLight;
-	font-size: 2vh;
+	font-family: Baksheesh;
+	font-size: 2.5vh;
 	text-decoration: none;
 	color: rgba(255, 255, 255, 1);
 }
