@@ -179,7 +179,6 @@ $(document).ready(
 	function() {
 		randomBG();
 		updateTime();
-		CountDown1();
 		CountDown2();
 	}
 );
