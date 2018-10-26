@@ -33,9 +33,6 @@ Can be found and changed on search.js
   
 
 
-# MISC
-TODO: add weather, "world time" and IP display
+# License
 
-
-
-Licensed under CC 4.0 BY-NC-SA
+CC 4.0 BY-NC-SA
