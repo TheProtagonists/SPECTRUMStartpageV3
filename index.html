@@ -21,17 +21,21 @@
 <body>
 
 	<div class="BG"></div>
+	<img src="Images/overlay.png" class="BG-overlay"></img>
 	
 	<div class="Main-container">
 		
-		<div class="Time-container">
-			<p class="TimeHMS" id="Time"></p>
-			<p class="TimeWeek" id="Week"></p>
-			<p class="TimeDate" id="Date"></p>
-		</div>
-		
-		<div class="Countdown-container">
-			<div id="countbox2"></div>
+		<div class="Top-container">
+			<div class="Top-left-container">
+				<p class="TimeHMS" id="Time"></p>
+				<p class="TimeDate" id="Date"></p>
+				<div id="countbox2"></div>
+			</div>
+			<div class="Top-right-container">
+				<p class="TimeWorld" id="UTC"></p>
+				<p class="TimeWorld" id="CST"></p>
+				<p class="TimeWorld" id="JST"></p>
+			</div>
 		</div>
 		
 		<div class="Search-container">
@@ -39,8 +43,8 @@
 			<span class="Bar"></span>
 		</div>
 		
-		<div class="Link-container">
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+		<div class="Link-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+			<div class="Category-container">
 				<img src="Images/a.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="https://www.youtube.com/" class="Link">YouTube</a>
@@ -51,7 +55,7 @@
 				</div>
 			</div>
 			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+			<div class="Category-container">
 				<img src="Images/b.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="https://play.google.com/music" class="Link">Play Music</a>
@@ -61,7 +65,7 @@
 				</div>
 			</div>
 			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+			<div class="Category-container">
 				<img src="Images/c.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="https://www.reddit.com/" class="Link">Frontpage</a>
@@ -71,7 +75,7 @@
 				</div>
 			</div>
 			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+			<div class="Category-container">
 				<img src="Images/d.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="http://www.deviantart.com/browse/all/" class="Link">deviantART</a>
@@ -81,7 +85,7 @@
 				</div>
 			</div>
 			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+			<div class="Category-container">
 				<img src="Images/e.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="https://wall.alphacoders.com/" class="Link">WP Abyss</a>
@@ -93,7 +97,7 @@
 				</div>
 			</div>
 			
-			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+			<div class="Category-container">
 				<img src="Images/f.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="http://store.steampowered.com/" class="Link">Steam</a>
@@ -107,10 +111,8 @@
 	
 	</div>
 
-	<script src="Script/jquery.simpleWeather.min.js"></script>
 	<script src="Script/search.js"></script>
 	<script src="Script/main.js"></script>
 	<script src="Script/countdowns.js"></script>
-	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 	
 </body>

@@ -13,17 +13,13 @@ function updateTime() {
 	var sec = leadZero(c.getSeconds());
 	
 	var dayH = c.getDay();
-	var dateH = c.getDate();
-	var monH = c.getMonth();
+	var dateH = leadZero(c.getDate());
+	var monH = leadZero(c.getMonth());
 	var yr = c. getFullYear();
 	
 	//Substitute date
-	var dayN = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
-	var dateN = [ "0", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th", "30th", "31st", "wat" ];
-    var monN = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+	var dayN = [ "Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat" ];
 	var day = dayN[dayH]
-	var date = dateN[dateH]
-	var mon = monN[monH]
 	
 	//"World" time
 	var utcH = c.getUTCHours();
@@ -38,12 +34,11 @@ function updateTime() {
 		jstH = jstH-24;}
 	
 	//Output
-	$('#Time').html(hr + ":" + min + ":" + sec);
-	$('#Week').html(day);
-	$('#Date').html(date + " " + mon + " " + yr);
-	$('#UTC').html(leadZero(utcH) + ":" + min);
-	$('#CST').html(leadZero(cstH) + ":" + min);
-	$('#JST').html(leadZero(jstH) + ":" + min);
+	$('#Time').html(hr + " : " + min + " : " + sec);
+	$('#Date').html(yr + " - " + monH + " - " + dateH + " " + day);
+	$('#UTC').html("UTC" + " /// " + leadZero(utcH) + " : " + min);
+	$('#CST').html("CST" + " /// " + leadZero(cstH) + " : " + min);
+	$('#JST').html("JST" + " /// " + leadZero(jstH) + " : " + min);
 	
 }
 setInterval(updateTime, 250);
@@ -157,11 +152,6 @@ function randomBG(){
 	$('.BG').css("background-size", "cover");
 	//Only way to get rid of white borders
 	$('.BG').css("transform", "scale(1.05)");
-}
-
-//Get public IP address
-function getIP(json) {
-	document.getElementById('PublicIP').innerHTML = json.ip;
 }
 
 //Blur darken / unblur lighten background using HTML DOM events

@@ -1,24 +1,5 @@
 /* --------Fonts-------- */
 
-/*Weather font*/
-@font-face {
-	font-family: Artill;
-	src:url('../fonts/artill_clean_icons-webfont.eot');
-	src:url('../fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'), 
-		url('../fonts/artill_clean_icons-webfont.woff') format('woff'), 
-		url('../fonts/artill_clean_icons-webfont.ttf') format('truetype'), 
-		url('../fonts/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
-	font-weight:normal;
-	font-style:normal;
-}
-
-.icon-0:before{content:":"} .icon-1:before{content:"p"} .icon-2:before{content:"S"} .icon-3:before{content:"Q"} .icon-4:before{content:"S"} .icon-5:before{content:"W"} .icon-6:before{content:"W"} .icon-7:before{content:"W"} .icon-8:before{content:"W"} .icon-9:before{content:"I"} .icon-10:before{content:"W"} .icon-11:before{content:"I"} .icon-12:before{content:"I"} .icon-13:before{content:"I"} .icon-14:before{content:"I"} .icon-15:before{content:"W"} .icon-16:before{content:"I"} .icon-17:before{content:"W"} .icon-18:before{content:"U"} .icon-19:before{content:"Z"} .icon-20:before{content:"Z"} .icon-21:before{content:"Z"} .icon-22:before{content:"Z"} .icon-23:before{content:"Z"} .icon-24:before{content:"E"} .icon-25:before{content:"E"} .icon-26:before{content:"3"} .icon-27:before{content:"a"} .icon-28:before{content:"A"} .icon-29:before{content:"a"} .icon-30:before{content:"A"} .icon-31:before{content:"6"} .icon-32:before{content:"1"} .icon-33:before{content:"6"} .icon-34:before{content:"1"} .icon-35:before{content:"W"} .icon-36:before{content:"1"} .icon-37:before{content:"S"} .icon-38:before{content:"S"} .icon-39:before{content:"S"} .icon-40:before{content:"M"} .icon-41:before{content:"W"} .icon-42:before{content:"I"} .icon-43:before{content:"W"} .icon-44:before{content:"a"} .icon-45:before{content:"S"} .icon-46:before{content:"U"} .icon-47:before{content:"S"}
-
-@font-face {
-	font-family: OlmpicBranding;
-	src: url(../fonts/Olympic_Branding.ttf);
-}
-
 @font-face {
 	font-family: NexaLight;
 	src: url(../fonts/Nexa_Light.ttf);
@@ -67,7 +48,18 @@
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-	transition: 0.25s ease-in-out all;
+	transition: 0.5s ease-in-out all;
+}
+
+.BG-overlay {
+	background: no-repeat center center fixed;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: 0.5s ease-in-out all;
+	mix-blend-mode: overlay;
 }
 
 .Main-container {
@@ -83,11 +75,26 @@
 	margin: auto;
 }
 
-.Time-container {
-	height: 20%;
+.Top-container {
+	display: flex;
+	flex-direction: row;
+	height: 25%;
 	width: 40%;
 	margin: 0 auto;
-	text-align: center;
+}
+
+.Top-left-container {
+	text-align: left;
+	height: 100%;
+	width: 50%;
+	margin: 0;
+}
+
+.Top-right-container {
+	text-align: right;
+	height: 100%;
+	width: 50%;
+	margin: 0;
 }
 
 .Search-container {
@@ -126,49 +133,33 @@
 	height: 100%;
 }
 
-.Countdown-container {
-	height: 5%;
-	width: 50%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
 /* --------Content Element Styles-------- */
-
-#countbox1 {
-	margin: 0 auto;
-	font-size: 2.5vh;
-	font-family: Borda;
-	color: rgba(255, 255, 255, 1);
-}
 
 #countbox2 {
 	margin: 0 auto;
 	font-size: 2.5vh;
 	font-family: Borda;
-	color: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 0.85);
 }
 
 .TimeHMS {
-	margin: 2vh auto -7vh auto;
-	font-size: 5vh;
-	font-family: Borda;
+	margin: 0;
+	font-size: 6vh;
+	font-family: Baksheesh;
 	color: rgba(255, 255, 255, 1);
 }
 
-.TimeWeek {
-	margin: 0 auto 0 auto;
-	font-size: 16vh;
-	font-family: OlmpicBranding;
-	color: rgba(255, 255, 255, 0.75);
+.TimeDate {
+	margin-top: 0;
+	font-size: 2.5vh;
+	font-family: Borda;
+	color: rgba(255, 255, 255, 0.85);
 }
 
-.TimeDate {
-	margin: -6vh auto 2vh auto;
-	font-size: 4vh;
-	font-family: Borda;
+.TimeWorld {
+	margin: 0;
+	font-size: 1.75vh;
+	font-family: BaksheeshBold;
 	color: rgba(255, 255, 255, 1);
 }
 
