@@ -131,7 +131,7 @@ function randomBG(){
 				'Images/84.jpg',
 				'Images/85.png',
 				'Images/86.jpg',
-				'Images/87.jpg',
+				'Images/87.png',
 				'Images/88.jpg',
 				'Images/89.jpg',
 				'Images/90.jpg',
@@ -146,7 +146,13 @@ function randomBG(){
 				'Images/99.jpg',
 				'Images/100.png',
 				'Images/101.png',
-				'Images/102.jpg'];
+				'Images/102.jpg',
+				'Images/103.jpg',
+				'Images/104.jpg',
+				'Images/105.jpg',
+				'Images/106.jpg',
+				'Images/107.png',
+				'Images/108.jpg'];
 	
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
@@ -155,7 +161,6 @@ function randomBG(){
 }
 
 //Blur darken / unblur lighten background using HTML DOM events
-//WHY THE FUCK DOESN'T CSS HAVE PARENT SELEECTORS ALREADY
 function blurBG() {
 	$('.BG').css("filter", "blur(5px) brightness(75%)");
 }
