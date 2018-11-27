@@ -135,7 +135,7 @@ function randomBG(){
 				'Images/88.jpg',
 				'Images/89.jpg',
 				'Images/90.jpg',
-				'Images/91.jpg',
+				'Images/91.png',
 				'Images/92.png',
 				'Images/93.jpg',
 				'Images/94.jpg',
