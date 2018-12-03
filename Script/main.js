@@ -14,7 +14,7 @@ function updateTime() {
 	
 	var dayH = c.getDay();
 	var dateH = leadZero(c.getDate());
-	var monH = leadZero(c.getMonth());
+	var monH = leadZero(c.getMonth() + 1);
 	var yr = c. getFullYear();
 	
 	//Substitute date
