@@ -18,7 +18,7 @@ function updateTime() {
 	var yr = c. getFullYear();
 	
 	//Substitute date
-	var dayN = [ "Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat" ];
+	var dayN = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ];
 	var day = dayN[dayH]
 	
 	//"World" time
@@ -73,13 +73,13 @@ function randomBG(){
 				'Images/25.png',
 				'Images/26.png',
 				'Images/27.jpg',
-				'Images/28.jpg',
+				'Images/28.png',
 				'Images/29.jpg',
 				'Images/30.jpg',
 				'Images/31.jpg',
 				'Images/32.png',
 				'Images/33.jpg',
-				'Images/34.jpg',
+				'Images/34.png',
 				'Images/35.jpg',
 				'Images/36.jpg',
 				'Images/37.jpg',
@@ -100,7 +100,7 @@ function randomBG(){
 				'Images/52.jpg',
 				'Images/53.jpg',
 				'Images/54.jpg',
-				'Images/55.jpg',
+				'Images/55.png',
 				'Images/56.jpg',
 				'Images/57.jpg',
 				'Images/58.jpg',
@@ -110,10 +110,10 @@ function randomBG(){
 				'Images/62.png',
 				'Images/63.png',
 				'Images/65.jpg',
-				'Images/66.jpg',
+				'Images/66.png',
 				'Images/67.jpg',
 				'Images/68.png',
-				'Images/69.png',
+				'Images/69.jpg',
 				'Images/70.png',
 				'Images/71.jpg',
 				'Images/72.jpg',
@@ -121,9 +121,9 @@ function randomBG(){
 				'Images/74.jpg',
 				'Images/75.jpg',
 				'Images/76.jpg',
-				'Images/77.jpg',
+				'Images/77.png',
 				'Images/78.jpg',
-				'Images/79.jpg',
+				'Images/79.png',
 				'Images/80.jpg',
 				'Images/81.png',
 				'Images/82.png',
@@ -152,11 +152,47 @@ function randomBG(){
 				'Images/105.jpg',
 				'Images/106.jpg',
 				'Images/107.png',
-				'Images/108.jpg'];
+				'Images/108.jpg',
+				'Images/109.jpg',
+				'Images/110.jpg',
+				'Images/111.jpg',
+				'Images/112.png',
+				'Images/113.jpg',
+				'Images/114.jpg',
+				'Images/115.png',
+				'Images/116.png',
+				'Images/117.png',
+				'Images/118.png',
+				'Images/119.jpg',
+				'Images/120.png',
+				'Images/121.jpg',
+				'Images/122.jpg',
+				'Images/123.jpg',
+				'Images/124.jpg',
+				'Images/125.png',
+				'Images/126.jpg',
+				'Images/127.png',
+				'Images/128.jpg',
+				'Images/129.png',
+				'Images/130.png',
+				'Images/131.jpg',
+				'Images/132.png',
+				'Images/133.jpg',
+				'Images/134.jpg',
+				'Images/135.jpg',
+				'Images/136.jpg',
+				'Images/137.jpg',
+				'Images/138.jpg',
+				'Images/139.jpg',
+				'Images/140.jpg',
+				'Images/141.jpg',
+				'Images/142.jpg',
+				'Images/143.png',
+				'Images/144.png'];
 	
 	$('.BG').css("background", "url("+ images[Math.floor(Math.random() * images.length)] + ") no-repeat center center fixed");
 	$('.BG').css("background-size", "cover");
-	//Only way to get rid of white borders
+	//Zoom in a bit so there won't be white borders when blurred
 	$('.BG').css("transform", "scale(1.05)");
 }
 
@@ -174,6 +210,5 @@ $(document).ready(
 	function() {
 		randomBG();
 		updateTime();
-		CountDown2();
 	}
 );
