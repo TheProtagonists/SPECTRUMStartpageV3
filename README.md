@@ -6,8 +6,6 @@ Startpage for personal use
 Live: https://theprotagonists.github.io/SPECTRUMStartpageV3/
 (Fonts might not show correctly)
 
-Preview of all backgrounds: https://imgur.com/a/5wegGsL
-
 # Search function prefixes
 Can be found and changed on search.js
 
