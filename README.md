@@ -8,10 +8,8 @@ Live: https://theprotagonists.github.io/SPECTRUMStartpageV3/
 
 # Search function prefixes
 Can be found and changed on search.js
-
-  -am   Amazon Smile search
   
-  -im   Google image search
+  -im   DuckDuckGo image search
   
   -yt   YouTube search
   
@@ -21,15 +19,11 @@ Can be found and changed on search.js
   
   -tv   TVTropes search
   
-  -wh   Wallheaven search
-  
-  -wa   Wallpaper Abyss search
-  
   -r/   enter subreddit
   
   
   
-  no prefix defaults to Google
+  no prefix defaults to DuckDuckGo
   
 
 
