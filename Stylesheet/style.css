@@ -60,6 +60,7 @@
 	left: 0;
 	transition: 0.5s ease-in-out all;
 	mix-blend-mode: overlay;
+	opacity: 0.5;
 }
 
 .Main-container {
@@ -78,7 +79,7 @@
 .Top-container {
 	display: flex;
 	flex-direction: row;
-	height: 25%;
+	height: 12.5%;
 	width: 40%;
 	margin: 0 auto;
 }
@@ -95,6 +96,13 @@
 	height: 100%;
 	width: 50%;
 	margin: 0;
+}
+
+.Middle-container {
+	text-align: left;
+	height: 12.5%;
+	width: 40%;
+	margin: 0 auto;
 }
 
 .Search-container {
@@ -137,9 +145,9 @@
 
 #countbox2 {
 	margin: 0 auto;
-	font-size: 2.5vh;
+	font-size: 2vh;
 	font-family: Borda;
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(255, 255, 255, 0.75);
 }
 
 .TimeHMS {
@@ -153,7 +161,7 @@
 	margin-top: 0;
 	font-size: 2.5vh;
 	font-family: Borda;
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(255, 255, 255, 0.75);
 }
 
 .TimeWorld {
@@ -224,7 +232,7 @@
 }
 
 .Link:before {
-	content: '[';
+	content: '>';
 	opacity: 0;
 	position: relative;
 	left: -10%;
@@ -237,7 +245,7 @@
 }
 
 .Link:after {
-	content: ']';
+	content: '<';
 	opacity: 0;
 	position: relative;
 	right: -10%;

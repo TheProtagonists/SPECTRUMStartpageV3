@@ -1,17 +1,13 @@
-//Mostly forked one-search-bar-multiple-search function 
+//Mostly forked and almost never actually used one-search-bar-multiple-search function 
 
 var searchInput = document.getElementById('Search');
 
 function search(query){
     switch(query.substr(0, 3)){
-        case "-am":
-            query = query.substr(4);
-            window.location = "https://smile.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=" + query;
-            break;
 		
 		case "-im":
             query = query.substr(4);
-            window.location = "https://www.google.com/search?tbm=isch&q=" + query;
+            window.location = "https://duckduckgo.com/?q=" + query + "&iax=images&ia=images";
             break;
 
         case "-yt":
@@ -39,18 +35,8 @@ function search(query){
 			window.location = "http://www.wolframalpha.com/input/?i=" + query;
 			break;
 
-		case "-wa":
-			query = query.substr(4);
-			window.location = "https://wall.alphacoders.com/search.php?search=" + query;
-			break;
-
-		case "-wh":
-			query = query.substr(4);
-			window.location = "http://alpha.wallhaven.cc/search?q=" + query;
-			break;
-
         default:
-            window.location="https://www.google.com/#q=" + query;
+            window.location="https://duckduckgo.com/?q=" + query;
     }
 }
 

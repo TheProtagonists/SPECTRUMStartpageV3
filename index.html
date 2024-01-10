@@ -3,16 +3,16 @@
 <html lang="en">
 
 <!-- 
-	Multipurpose aesthetically appealing and partially forked adaptive startpage that displays a lot of useless information
+	I'm gonna be honest most of these just looks nice I don't actually use anything here
 -->
 
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="icon" sizes="128x128" href="images/Logo.png" />
+	<link rel="icon" sizes="128x128" href="Assets/Logo.png" />
 	<link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	
 	<title>&lrm;</title>
 
@@ -21,7 +21,7 @@
 <body>
 
 	<div class="BG"></div>
-	<img src="Images/overlay.png" class="BG-overlay"></img>
+	<img src="Assets/overlay.png" class="BG-overlay"></img>
 	
 	<div class="Main-container">
 		
@@ -29,13 +29,16 @@
 			<div class="Top-left-container">
 				<p class="TimeHMS" id="Time"></p>
 				<p class="TimeDate" id="Date"></p>
-				<p id="countbox2">Welcome back to the multiverse</p>
 			</div>
 			<div class="Top-right-container">
 				<p class="TimeWorld" id="UTC"></p>
 				<p class="TimeWorld" id="CST"></p>
 				<p class="TimeWorld" id="JST"></p>
 			</div>
+		</div>
+		
+		<div class="Middle-container">
+			<p id="countbox2"></p>
 		</div>
 		
 		<div class="Search-container">
@@ -45,51 +48,45 @@
 		
 		<div class="Link-container" onmouseover="blurBG()" onmouseout="unblurBG()">
 			<div class="Category-container">
-				<img src="Images/a.png" class="Icons"/>
+				<img src="Assets/a.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="https://www.youtube.com/" class="Link">YouTube</a>
 					<a href="https://en.wikipedia.org/wiki/Main_Page" class="Link">Wikipedia</a>
-					<a href="https://twitter.com/" class="Link">Twitter</a>
 					<a href="https://mail.google.com/mail/u/0/#inbox" class="Link">Mail</a>
 					<a href="https://drive.google.com/drive/my-drive" class="Link">Drive</a>
 				</div>
 			</div>
 			
 			<div class="Category-container">
-				<img src="Images/b.png" class="Icons"/>
+				<img src="Assets/b.png" class="Icons"/>
 				<div class="Link-index">
-					<a href="https://play.google.com/music" class="Link">Play Music</a>
 					<a href="https://soundcloud.com/you/collection" class="Link">SoundCloud</a>
-					<a href="https://www.youtube.com/playlist?list=PLQROaTQABfcPFa5alQM0KuBi0SrqS_-pV" class="Link">YT Playlist</a>
 					<a href="https://music.youtube.com/library" class="Link">YT Music</a>
 				</div>
 			</div>
 			
 			<div class="Category-container">
-				<img src="Images/c.png" class="Icons"/>
+				<img src="Assets/c.png" class="Icons"/>
 				<div class="Link-index">
-					<a href="https://www.reddit.com/" class="Link">Frontpage</a>
-					<a href="https://www.reddit.com/me/m/aestheics" class="Link">m/Aestheics</a>
-					<a href="https://www.reddit.com/me/m/memetics" class="Link">m/Memes</a>
-					<a href="https://www.reddit.com/user/TheProtagonists/saved/" class="Link">Saved</a>
+					<a href="https://twitter.com/" class="Link">Twitter</a>
+					<a href="https://www.reddit.com/" class="Link">Reddit</a>
+					<a href="https://www.reddit.com/user/TheProtagonists/saved/" class="Link">Reddit Saved</a>
 				</div>
 			</div>
 			
 			<div class="Category-container">
-				<img src="Images/d.png" class="Icons"/>
+				<img src="Assets/d.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="http://www.pixiv.net/" class="Link">pixiv</a>
 					<a href="http://www.pixivision.net/" class="Link">pixivision</a>
 					<a href="http://tvtropes.org/" class="Link">TV Tropes</a>
 					<a href="https://www.artstation.com" class="Link">ArtStation</a>
-					<a href="http://www.deviantart.com/browse/all/" class="Link">deviantART</a>
 				</div>
 			</div>
 			
 			<div class="Category-container">
-				<img src="Images/e.png" class="Icons"/>
+				<img src="Assets/e.png" class="Icons"/>
 				<div class="Link-index">
-					<a href="https://wall.alphacoders.com/" class="Link">WP Abyss</a>
 					<a href="https://wallhaven.cc/search?categories=110&purity=110&sorting=date_added&order=desc" class="Link">Wallheaven</a>
 					<a href="http://safebooru.org/index.php?page=post&s=list" class="Link">Safebooru</a>
 					<a href="http://konachan.net/post" class="Link">Konachan</a>
@@ -99,13 +96,11 @@
 			</div>
 			
 			<div class="Category-container">
-				<img src="Images/f.png" class="Icons"/>
+				<img src="Assets/f.png" class="Icons"/>
 				<div class="Link-index">
 					<a href="http://store.steampowered.com/" class="Link">Steam</a>
-					<a href="http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/" class="Link">KanColle</a>
 					<a href="http://game.granbluefantasy.jp/" class="Link">Granblue</a>
 					<a href="https://myanimelist.net/animelist/TheProtagonists" class="Link">Anime List</a>
-					<a href="http://kissanime.ru/BookmarkList" class="Link">Kissanime</a>
 				</div>
 			</div>
 		</div>
